@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electronics calculator Hub.</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#222222">
+</head>
+<body>
+    <h1>Electronics calculator Hub.</h1>
+<nav>
+    <a href="#ohms">Ohm’s Law</a>
+    <a href="#power">Power</a>
+    <a href="#units">Unit Converter</a>
+</nav>
+<p>An electrical & electronics engineering toolkit</p>
+<section id="ohms">
+    <h1>Ohm's law calculator.</h1>
+    <div class="calculator">
+        <label for="voltge (V)"></label>
+        <input type="number" id="voltage" placeholder=" Enter Voltge ">
+        <label for="current (I)"></label>
+        <input type="number" id="current" placeholder=" Enter Current ">
+        <label for="resistance (R)"></label>
+        <input type="number" id="resistance" placeholder=" Enter Resistance ">
+        <button onclick="calculate()">Calculate </button>
+        <h2 id="result"></h2>
+        <div>
+    <script src="script.js"></script>
+        </div>
+        </section>
+        <hr>
+
+        <section id="power">
+<h2>Power Calculator</h2>
+
+<div class="calculator">
+    <label>Voltage (V)</label>
+    <input type="number" id="p_voltage" placeholder="Enter voltage">
+
+    <label>Current (I)</label>
+    <input type="number" id="p_current" placeholder="Enter current">
+
+    <label>Resistance (R)</label>
+    <input type="number" id="p_resistance" placeholder="Enter resistance">
+
+    <button onclick="calculatePower()">Calculate Power</button>
+
+    <h2 id="powerResult"></h2>
+</div>
+</section>
+<hr>
+
+<h2>Unit Converter</h2>
+<section id="units">
+<div class="calculator">
+    <h3>Current Converter</h3>
+
+    <label>Milliamps (mA)</label>
+    <input type="number" id="ma" placeholder="Enter mA">
+
+    <label>Amps (A)</label>
+    <input type="number" id="amp" placeholder="Enter A">
+
+    <button onclick="convertCurrent()">Convert Current</button>
+
+    <h3>Resistance Converter</h3>
+
+    <label>Kilo-ohms (kΩ)</label>
+    <input type="number" id="kohm" placeholder="Enter kΩ">
+
+    <label>Ohms (Ω)</label>
+    <input type="number" id="ohm" placeholder="Enter Ω">
+
+    <button onclick="convertResistance()">Convert Resistance</button>
+
+    <h2 id="unitResult"></h2>
+</div>
+</section>
+</body>
+</html>
